@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio - Nama Anda</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <h2>FtrRs<span></span></h2>
+          <!-- Ganti dengan nama Anda -->
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portofolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1><span class="highlight">Full Stack Web Developer</span></h1>
+        <p>Menciptakan website yang inovatif, aman, dan user-friendly</p>
+        <div class="hero-buttons">
+          <a href="#portfolio" class="btn primary">Lihat Proyek</a>
+          <!-- Update href ke portfolio -->
+          <a href="#contact" class="btn secondary">Hubungi Saya</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Tentang Saya</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>Hello, Nama Saya Fatur Rosek</p>
+            <p>
+              Saya adalah developer berpengalaman dengan passion di web
+              development dan design. Lebih dari 3 tahun membangun aplikasi
+              modern menggunakan teknologi terkini. Saya fokus pada kode yang
+              clean, performa tinggi, dan desain yang menarik.
+            </p>
+            <div class="skills">Download Cv</div>
+          </div>
+          <div class="about-image">
+            <img src="" alt="Foto Profil" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section (Baru: Dengan 3 Button Sub-Nav) -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2>Portofolio Saya</h2>
+
+        <!-- Sub-Nav dengan 3 Button -->
+        <nav class="sub-nav">
+          <button
+            onclick="showSubSection('projects-sub')"
+            class="sub-btn active"
+          >
+            Projects
+          </button>
+          <button onclick="showSubSection('sertif-sub')" class="sub-btn">
+            Sertifikat
+          </button>
+          <button onclick="showSubSection('tech-sub')" class="sub-btn">
+            Tech Stack
+          </button>
+        </nav>
+
+        <!-- Sub-Section: Projects -->
+        <div id="projects-sub" class="sub-section active">
+          <div class="projects-grid">
+            <div class="project-card">
+              <img src="" alt="Proyek 1" />
+              <div class="project-info">
+                <h4>E-Commerce Platform</h4>
+                <p>
+                  Website belanja online responsif dengan integrasi payment
+                  gateway menggunakan React dan Stripe.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="link"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#" class="link"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="" alt="Proyek 2" />
+              <div class="project-info">
+                <h4>Dashboard Admin</h4>
+                <p>
+                  Aplikasi dashboard untuk manajemen data dengan chart
+                  interaktif menggunakan Vue.js dan Chart.js.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="link"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#" class="link"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="" alt="Proyek 3" />
+              <div class="project-info">
+                <h4>Portfolio Website</h4>
+                <p>
+                  Desain portofolio pribadi dengan animasi GSAP dan backend
+                  Node.js untuk contact form.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="link"
+                    ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                  >
+                  <a href="#" class="link"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub-Section: Sertifikat -->
+        <div id="sertif-sub" class="sub-section">
+          <div class="sertif-grid">
+            <!-- Gunakan grid mirip projects -->
+            <div class="project-card">
+              <!-- Reuse project-card style -->
+              <img src="" alt="Sertifikat 1" />
+              <div class="project-info">
+                <h4>Responsive Web Design - freeCodeCamp</h4>
+                <p>
+                  Tanggal: 2023 | Sertifikat dasar HTML, CSS, dan responsive
+                  design.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="link"
+                    ><i class="fas fa-external-link-alt"></i> Lihat
+                    Sertifikat</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="" alt="Sertifikat 2" />
+              <div class="project-info">
+                <h4>JavaScript Algorithms - freeCodeCamp</h4>
+                <p>
+                  Tanggal: 2023 | Pemahaman algoritma dan struktur data dengan
+                  JS.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="link"
+                    ><i class="fas fa-external-link-alt"></i> Lihat
+                    Sertifikat</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="" alt="Sertifikat 3" />
+              <div class="project-info">
+                <h4>Front-End Nanodegree - Udacity</h4>
+                <p>
+                  Tanggal: 2024 | Program lengkap front-end dengan project
+                  real-world.
+                </p>
+                <div class="project-links">
+                  <a href="#" class="link"
+                    ><i class="fas fa-external-link-alt"></i> Lihat
+                    Sertifikat</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub-Section: Tech Stack -->
+        <div id="tech-sub" class="sub-section">
+          <div class="tech-stack-grid">
+            <div class="skill-item tech-badge">
+              <i class="fab fa-html5"></i>
+              <span>HTML5 & CSS3</span>
+            </div>
+            <div class="skill-item tech-badge">
+              <i class="fab fa-js-square"></i>
+              <span>JavaScript (ES6+)</span>
+            </div>
+            <div class="skill-item tech-badge">
+              <i class="fab fa-react"></i>
+              <span>React.js</span>
+            </div>
+            <div class="skill-item tech-badge">
+              <i class="fab fa-vue-js"></i>
+              <span>Vue.js</span>
+            </div>
+            <div class="skill-item tech-badge">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item tech-badge">
+              <i class="fab fa-git-alt"></i>
+              <span>Git & GitHub</span>
+            </div>
+            <div class="skill-item tech-badge">
+              <i class="fas fa-database"></i>
+              <span>Firebase</span>
+            </div>
+            <div class="skill-item tech-badge">
+              <i class="fab fa-figma"></i>
+              <span>Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Hubungi Saya</h2>
+        <p>Mari berkolaborasi! Kirim pesan atau hubungi via social media.</p>
+        <form class="contact-form">
+          <input type="text" placeholder="Nama Lengkap" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Pesan Anda..." rows="5" required></textarea>
+          <button type="submit" class="btn primary">Kirim Pesan</button>
+        </form>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 FtrRs*. All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
