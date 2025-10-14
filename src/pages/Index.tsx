@@ -10,36 +10,45 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "Full-stack e-commerce solution with payment integration and real-time inventory management",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
+    title: "E-Stock",
+    description: "Sistem layanan kesehatan hewan berbasis web untuk manajemen stok obat, transaksi penyerahan barang, dan pencatatan data oleh petugas puskeswan secara efisien",
+    tags: ["Laravel", "MySQL", "Bootstrap", "REST API"],
+    image: "src/pages/image/puskeswan.png", 
+    demoUrl: "https://e-puskeswan.up.railway.app/",
+    githubUrl: "https://github.com/FaturRosek/e-puskeswan",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task management application with real-time updates and team features",
-    tags: ["Vue.js", "Firebase", "Tailwind CSS"],
+    title: "Aplikasi AR Batik Madura",
+    description: "Aplikasi berbasis Android yang memanfaatkan teknologi Augmented Reality untuk menampilkan hasil klasifikasi motif batik Madura secara interaktif. Sistem ini menggunakan arsitektur MobileNetV2 sebagai model klasifikasi dan Vuforia untuk visualisasi tiga dimensi yang memperkaya pengalaman pengguna dalam mengenal motif batik khas Madura",
+    tags: ["Unity", "Vuforia", "MobileNetV2", "TensorFlow", "Android"],
+    video: "src/pages/image/ar.mp4",
   },
   {
-    title: "AI Chat Assistant",
-    description: "Intelligent chatbot powered by modern AI models with context awareness",
-    tags: ["Python", "FastAPI", "OpenAI", "React"],
+    title: "E-KTH",
+    description: "Aplikasi web untuk mempermudah manajemen operasional Kelompok Tani Hutan (KTH), termasuk pengelolaan anggota, pencatatan kegiatan, dan pemantauan hasil produksi secara digital",
+    tags: ["Laravel", "MySQL", "Tailwind CSS", "REST API"],
+    image: "src/pages/image/kth.png",
+    demoUrl: "https://kth.up.railway.app/",
+    githubUrl: "https://github.com/FaturRosek/KTH",
   },
   {
-    title: "Portfolio Website",
-    description: "Modern portfolio website with smooth animations and dark mode support",
-    tags: ["React", "TypeScript", "Tailwind CSS"],
+    title: "MM Tailor",
+    description: "Aplikasi berbasis web untuk pendataan dan manajemen karyawan, mencakup pengelolaan data pribadi, serta laporan kegiatan kerja secara efisien",
+    tags: ["Laravel", "MySQL", "Bootstrap", "REST API"],
+    image: "src/pages/image/tailor.png",
+    demoUrl: "https://mm-tailor.up.railway.app/",
+    githubUrl: "https://github.com/username/ai-chat-assistant",
   },
   {
-    title: "Weather Dashboard",
-    description: "Real-time weather monitoring dashboard with interactive maps and forecasts",
-    tags: ["Next.js", "API Integration", "Charts"],
+    title: "Game Edukasi Batik Madura",
+    description: "Game edukasi yang dirancang untuk memperkenalkan serta melestarikan motif batik khas Madura melalui pengalaman bermain interaktif",
+    tags: ["Construct 2", "HTML5", "JavaScript", "Game Design"],
+    video: "src/pages/image/game.mp4",
+    demoUrl: "https://mm-tailor.up.railway.app/",
   },
-  {
-    title: "Social Media Dashboard",
-    description: "Analytics dashboard for tracking social media metrics across platforms",
-    tags: ["React", "Node.js", "MongoDB", "Charts"],
-  },
+  
 ];
+
 
 const certificates = [
   {
