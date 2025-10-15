@@ -3,6 +3,12 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { TypeAnimation } from 'react-type-animation';
 
 export function Hero() {
+
+  const scrollToProjects = () => {
+    const section = document.getElementById("project");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-transparent pointer-events-none" />
@@ -50,7 +56,11 @@ export function Hero() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
-            <Button size="lg" className="rounded-full shadow-glow hover:shadow-glow transition-all">
+            <Button
+              size="lg"
+              className="rounded-full shadow-glow hover:shadow-glow transition-all"
+              onClick={scrollToProjects}
+            >
               View My Work
               <ArrowDown className="ml-2 h-4 w-4" />
             </Button>

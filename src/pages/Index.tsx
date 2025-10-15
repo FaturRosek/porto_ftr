@@ -18,10 +18,11 @@ const projects = [
     githubUrl: "https://github.com/FaturRosek/e-puskeswan",
   },
   {
-    title: "Aplikasi AR Batik Madura",
-    description: "Aplikasi berbasis Android yang memanfaatkan teknologi Augmented Reality untuk menampilkan hasil klasifikasi motif batik Madura secara interaktif. Sistem ini menggunakan arsitektur MobileNetV2 sebagai model klasifikasi dan Vuforia untuk visualisasi tiga dimensi yang memperkaya pengalaman pengguna dalam mengenal motif batik khas Madura",
-    tags: ["Unity", "Vuforia", "MobileNetV2", "TensorFlow", "Android"],
+    title: "Aplikasi AR Motif Batik Madura",
+    description: "Aplikasi berbasis Android yang memanfaatkan teknologi Augmented Reality untuk menampilkan hasil klasifikasi motif batik Madura secara interaktif",
+    tags: ["Unity", "Vuforia", "Artificial Intelligence", "TensorFlow", "Android"],
     video: "src/pages/image/ar.mp4",
+    demoUrl: "https://drive.google.com/file/d/1T1nL8ziOhxrS50oEQM0iEDwtCNL7TxzP/view?usp=sharing",
   },
   {
     title: "E-KTH",
@@ -44,7 +45,7 @@ const projects = [
     description: "Game edukasi yang dirancang untuk memperkenalkan serta melestarikan motif batik khas Madura melalui pengalaman bermain interaktif",
     tags: ["Construct 2", "HTML5", "JavaScript", "Game Design"],
     video: "src/pages/image/game.mp4",
-    demoUrl: "https://mm-tailor.up.railway.app/",
+    demoUrl: "https://drive.google.com/file/d/1V0CEJGPduDBMTYghHU5QYAuEhxj7oHG2/view?usp=sharing",
   },
   
 ];
@@ -100,7 +101,7 @@ const Index = () => {
 
       <AboutMe />
 
-      <section className="py-20 px-4">
+      <section id="project" className="py-20 px-4">
         <div className="container max-w-6xl mx-auto">
           <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
             <div className="flex justify-center mb-12">
