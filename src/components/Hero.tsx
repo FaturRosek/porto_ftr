@@ -81,14 +81,13 @@ export function Hero() {
           </div>
 
           <div className="flex items-center justify-center gap-4 pt-8">
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10">
-              <Github className="h-5 w-5" />
-            </Button>
+            <a href="https://github.com/FaturRosek" target="_blank">
+              <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10">
+                <Github className="h-5 w-5" />
+              </Button>
+            </a>
             <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10">
               <Linkedin className="h-5 w-5" />
-            </Button>
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10">
-              <Mail className="h-5 w-5" />
             </Button>
           </div>
         </div>
