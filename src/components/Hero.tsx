@@ -9,6 +9,16 @@ export function Hero() {
     section?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToContact = () => {
+    const section = document.getElementById("contact");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToAbout = () => {
+    const section = document.getElementById("about");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-transparent pointer-events-none" />
@@ -64,7 +74,7 @@ export function Hero() {
               View My Work
               <ArrowDown className="ml-2 h-4 w-4" />
             </Button>
-            <Button variant="outline" size="lg" className="rounded-full">
+            <Button variant="outline" size="lg" className="rounded-full" onClick={scrollToContact}>
               Contact Me
               <Mail className="ml-2 h-4 w-4" />
             </Button>
@@ -86,7 +96,7 @@ export function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ArrowDown className="h-6 w-6 text-muted-foreground" />
+        <ArrowDown className="h-6 w-6 text-muted-foreground" onClick={scrollToAbout} />
       </div>
     </section>
   );

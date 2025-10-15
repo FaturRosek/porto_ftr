@@ -11,7 +11,7 @@ const skills = [
 
 export function AboutMe() {
   return (
-    <section className="py-20 px-4">
+    <section id="about" className="py-20 px-4">
       <div className="container max-w-6xl mx-auto">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
