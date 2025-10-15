@@ -1,5 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button"; // ✅ Tambahkan import Button
+import { Download } from "lucide-react"; // ✅ Tambahkan ikon download
 
 const skills = [
   "Problem Solving",
@@ -48,26 +50,44 @@ export function AboutMe() {
                     </Badge>
                   ))}
                 </div>
+                <div className="mt-6 flex justify-start pt-4">
+                  <a href="/cv/Fatur Rosek-resume.pdf" download>
+                    <Button
+                      className="flex items-center gap-2 px-6 py-2 rounded-full
+                                bg-gradient-to-r from-primary to-purple-600
+                                text-white font-semibold shadow-lg
+                                hover:shadow-[0_0_15px_rgba(147,51,234,0.6)]
+                                hover:scale-105 active:scale-95
+                                transition-all duration-300 ease-in-out"
+                    >
+                      <Download className="h-4 w-4" />
+                      Download CV
+                    </Button>
+                  </a>
+                </div>
               </div>
             </CardContent>
           </Card>
+
           <div className="lg:col-span-2 space-y-6">
             <Card className="bg-gradient-card border-border/50 shadow-card">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4">My Story</h3>
                 <div className="space-y-4 text-muted-foreground">
                   <p>
-                    Saya <span className="font-semibold">Fatur Rosek</span>, fresh graduate dari <span className="font-semibold">Teknik Informatika Universitas 
-                    Trunojoyo Madura</span>. Saya memiliki ketertarikan yang kuat di bidang pengembangan web full stack, 
+                    Saya <span className="font-semibold">Fatur Rosek</span>, lulusan{" "}
+                    <span className="font-semibold">Teknik Informatika Universitas Trunojoyo Madura</span>.
+                    Saya memiliki ketertarikan yang kuat di bidang pengembangan web full stack,
                     serta minat mendalam terhadap Data Science dan Artificial Intelligence.
                   </p>
                   <p>
-                    Selama masa studi, saya aktif mengerjakan berbagai proyek berbasis teknologi, mulai dari sistem e-commerce, 
-                    aplikasi layanan publik, game edukasi hingga pengembangan media pembelajaran interaktif berbasis Augmented Reality.
+                    Selama masa studi, saya aktif mengerjakan berbagai proyek berbasis teknologi,
+                    mulai dari sistem e-commerce, aplikasi layanan publik, game edukasi hingga
+                    pengembangan media pembelajaran interaktif berbasis Augmented Reality.
                   </p>
                   <p>
-                    Saya senang memecahkan masalah melalui analisis data, logika pemrograman, dan penerapan teknologi inovatif untuk 
-                    menciptakan solusi digital yang bermanfaat..
+                    Saya senang memecahkan masalah melalui analisis data, logika pemrograman,
+                    dan penerapan teknologi inovatif untuk menciptakan solusi digital yang bermanfaat.
                   </p>
                 </div>
               </CardContent>

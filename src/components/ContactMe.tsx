@@ -60,7 +60,6 @@ export function ContactMe() {
 
   const handleChange = (field: keyof ContactForm, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }));
-    // Clear error when user starts typing
     if (errors[field]) {
       setErrors((prev) => ({ ...prev, [field]: undefined }));
     }
@@ -70,7 +69,6 @@ export function ContactMe() {
     e.preventDefault();
     setErrors({});
 
-    // Validate form data
     const result = contactSchema.safeParse(formData);
     
     if (!result.success) {
@@ -86,14 +84,12 @@ export function ContactMe() {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
       await new Promise((resolve) => setTimeout(resolve, 1500));
       
       toast.success("Message sent successfully!", {
         description: "I'll get back to you as soon as possible.",
       });
       
-      // Reset form
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       toast.error("Failed to send message", {
@@ -111,13 +107,9 @@ export function ContactMe() {
           <h2 className="text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
             Get In Touch
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Have a project in mind or just want to chat? Feel free to reach out!
-          </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
-          {/* Contact Info */}
           <div className="space-y-4">
             {contactInfo.map(({ icon: Icon, label, value, href }) => (
               <Card 
@@ -156,15 +148,14 @@ export function ContactMe() {
             ))}
           </div>
 
-          {/* Contact Form */}
           <Card className="lg:col-span-2 bg-gradient-card border-border/50 shadow-card">
             <CardContent className="p-6">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
+                  <Label htmlFor="name">Nama</Label>
                   <Input
                     id="name"
-                    placeholder="Your name"
+                    placeholder="Tulis nama anda..."
                     value={formData.name}
                     onChange={(e) => handleChange("name", e.target.value)}
                     maxLength={100}
@@ -180,7 +171,7 @@ export function ContactMe() {
                   <Input
                     id="email"
                     type="email"
-                    placeholder="your.email@example.com"
+                    placeholder="email@example.com"
                     value={formData.email}
                     onChange={(e) => handleChange("email", e.target.value)}
                     maxLength={255}
@@ -192,10 +183,10 @@ export function ContactMe() {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message</Label>
+                  <Label htmlFor="message">Pesan</Label>
                   <Textarea
                     id="message"
-                    placeholder="Tell me about your project or just say hi!"
+                    placeholder="Tulis pesanmu disini..."
                     value={formData.message}
                     onChange={(e) => handleChange("message", e.target.value)}
                     maxLength={1000}
@@ -220,7 +211,7 @@ export function ContactMe() {
                   disabled={isSubmitting}
                   className="w-full rounded-full shadow-glow hover:shadow-glow transition-all"
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  {isSubmitting ? "Sending..." : "Kirim Pesan"}
                   <Send className="ml-2 h-4 w-4" />
                 </Button>
               </form>

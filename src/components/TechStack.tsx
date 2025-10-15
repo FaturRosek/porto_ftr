@@ -1,38 +1,40 @@
-import { Code2, Database, Layout, Server, Smartphone, Terminal } from "lucide-react";
+import { Code2, Database, Layout, Server, Smartphone, Brain } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 const techCategories = [
   {
-    category: "Web Development",
+    category: "Front-End",
     icon: Layout,
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vue.js"]
+    technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Bootstrap", "React", "TypeScript"]
   },
   {
     category: "Backend",
     icon: Server,
-    technologies: ["Node.js", "Express", "Python", "Django", "FastAPI"]
+    technologies: ["Laravel", "Node.js", "Express"]
   },
   {
     category: "Database",
     icon: Database,
-    technologies: ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Supabase"]
+    technologies: ["MySQL", "PostgreSQL", "Supabase"]
+  },
+  {
+    category: "Artificial Intelligence & Data Science",
+    icon: Brain,
+    technologies: ["Python", "TensorFlow", "Keras", "NumPy", "Pandas", "Matplotlib", "Streamlit"]
   },
   {
     category: "Mobile",
     icon: Smartphone,
-    technologies: ["React Native", "Flutter", "Swift", "Kotlin"]
+    technologies: ["Unity", "Vuforia", "Android Studio", "C#"]
   },
   {
-    category: "DevOps",
-    icon: Terminal,
-    technologies: ["Docker", "Kubernetes", "AWS", "GitHub Actions", "Vercel"]
-  },
-  {
-    category: "Tools",
+    category: "Tools & Design",
     icon: Code2,
-    technologies: ["Git", "VS Code", "Figma", "Postman", "Jest"]
+    technologies: ["Git", "Github", "GitLab", "VS Code", "Figma", "Postman"]
   }
 ];
+
+
 
 export function TechStack() {
   return (
