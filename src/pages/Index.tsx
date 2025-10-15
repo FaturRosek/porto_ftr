@@ -7,6 +7,7 @@ import { ProjectCard } from "@/components/ProjectCard";
 import { CertificateCard } from "@/components/CertificateCard";
 import { TechStack } from "@/components/TechStack";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { url } from "inspector";
 
 const projects = [
   {
@@ -53,40 +54,49 @@ const projects = [
 
 const certificates = [
   {
-    title: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
+    title: "Hak Cipta Aplikasi AR",
+    issuer: "Direktoral Jenderal Kekayaan Intelektual",
+    date: "2025",
+    image: "image/ar.jpg",
+    credential: "000977369",
+    url: "https://hakcipta.dgip.go.id/legal/c/NWFlM2YwNDdlNWZiNDk5MDNmMTU4ODFkZGY1MmNkNDY=",
+  },
+  {
+    title: "Junior Web Developer",
+    issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
     date: "2024",
-    credential: "ABC123XYZ",
+    image: "image/bnsp.jpg",
+    credential: "63090 2513 3 0101473 2024",
+    url:"https://sertifikasi.lspdigital.id/sertifikasi/cetak_sertifikat/156702",
   },
   {
-    title: "Professional Scrum Master I",
-    issuer: "Scrum.org",
+    title: "Hak Cipta Game Edukasi",
+    issuer: "Direktoral Jenderal Kekayaan Intelektual",
+    date: "2024",
+    image: "image/game.jpg",
+    credential: "000791987",
+    url: "https://e-hakcipta.dgip.go.id/legal/c/NTQ3Zjk1NjJmZTg3YzIwZDI3YTY0YWZmZDZkNDllZWUK",
+  },
+  {
+    title: "MSIB Angkatan 6",
+    issuer: "PT Arkatama Multi Solusindo",
+    date: "2024",
+    image: "image/sib.jpg",
+    credential: "AMS/B-409/Sert/VI/2024",
+  },
+  {
+    title: "Database Foundations",
+    issuer: "Oracle Academy",
     date: "2023",
-    credential: "PSM-001",
+    image: "image/foundation.jpg",
+    credential: "",
   },
   {
-    title: "Meta Front-End Developer",
-    issuer: "Meta (Coursera)",
+    title: "Database Design",
+    issuer: "Oracle Academy",
     date: "2023",
-    credential: "META-FED-2023",
-  },
-  {
-    title: "Google Cloud Professional",
-    issuer: "Google Cloud",
-    date: "2023",
-    credential: "GCP-PRO-456",
-  },
-  {
-    title: "MongoDB Certified Developer",
-    issuer: "MongoDB University",
-    date: "2022",
-    credential: "MONGO-DEV-789",
-  },
-  {
-    title: "React Advanced Certification",
-    issuer: "FreeCodeCamp",
-    date: "2022",
-    credential: "FCC-REACT-ADV",
+    image: "image/design.jpg",
+    credential: "",
   },
 ];
 
@@ -136,12 +146,13 @@ const Index = () => {
             </TabsContent>
 
             <TabsContent value="certificates" className="animate-fade-in">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
                 {certificates.map((cert, index) => (
                   <CertificateCard key={index} {...cert} />
                 ))}
               </div>
             </TabsContent>
+
 
             <TabsContent value="tech-stack" className="animate-fade-in">
 
@@ -156,7 +167,7 @@ const Index = () => {
       <footer className="py-12 px-4 border-t border-border/50 bg-muted/30">
         <div className="container max-w-6xl mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2024 Developer Portfolio. Built with React & Tailwind CSS
+            © 2025 FtrRs Portofolio
           </p>
         </div>
       </footer>

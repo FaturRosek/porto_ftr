@@ -27,7 +27,6 @@ export function ProjectCard({
   const [isPlaying, setIsPlaying] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
-  // 🔍 Deteksi perubahan fullscreen
   useEffect(() => {
     const handleFullscreenChange = () => {
       const isFull =
@@ -62,9 +61,9 @@ export function ProjectCard({
     if (video.requestFullscreen) {
       video.requestFullscreen();
     } else if ((video as any).webkitRequestFullscreen) {
-      (video as any).webkitRequestFullscreen(); // Safari
+      (video as any).webkitRequestFullscreen(); 
     } else if ((video as any).mozRequestFullScreen) {
-      (video as any).mozRequestFullScreen(); // Firefox
+      (video as any).mozRequestFullScreen(); 
     }
   };
 
@@ -73,7 +72,6 @@ export function ProjectCard({
       <div className="relative overflow-hidden h-48 bg-muted flex items-center justify-center">
         {video ? (
           <>
-            {/* 🎥 Video */}
             <video
               ref={videoRef}
               src={video}
@@ -85,7 +83,6 @@ export function ProjectCard({
               }`}
             />
 
-            {/* ▶️ Tombol Play/Pause */}
             <button
               onClick={handlePlayPause}
               className="absolute text-white bg-black/50 rounded-full p-2 hover:bg-black/70 transition opacity-0 group-hover:opacity-100"
@@ -96,8 +93,6 @@ export function ProjectCard({
                 <Play className="w-8 h-8" />
               )}
             </button>
-
-            {/* ⛶ Tombol Fullscreen */}
             <button
               onClick={handleFullScreen}
               className="absolute top-2 right-2 text-white bg-black/50 rounded-full p-1 hover:bg-black/70 transition opacity-0 group-hover:opacity-100"

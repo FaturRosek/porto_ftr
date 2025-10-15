@@ -25,22 +25,22 @@ export function AboutMe() {
               <div className="flex flex-col items-center text-center space-y-4">
                 <div className="relative">
                   <div className="h-32 w-32 rounded-full bg-gradient-primary p-1 animate-glow">
-                    <div className="h-full w-full rounded-full bg-background flex items-center justify-center">
-                      <div className="h-28 w-28 rounded-full bg-gradient-primary flex items-center justify-center text-4xl font-bold text-white">
-                        D
-                      </div>
+                    <div className="h-full w-full rounded-full bg-background flex items-center justify-center overflow-hidden">
+                      <img
+                        src="/image/foto.jpg"
+                        alt="Fatur Rosek"
+                        className="h-26 w-26 rounded-full object-cover"
+                      />
                     </div>
                   </div>
                   <div className="absolute -bottom-2 -right-2 h-8 w-8 rounded-full bg-accent flex items-center justify-center shadow-lg">
                     <span className="text-xl">👋</span>
                   </div>
                 </div>
-                
                 <div>
                   <h3 className="text-2xl font-bold">Fatur Rosek</h3>
                   <p className="text-muted-foreground">Full Stack Web Developer</p>
                 </div>
-
                 <div className="flex flex-wrap gap-2 justify-center pt-2">
                   {skills.map((skill) => (
                     <Badge key={skill} variant="secondary" className="rounded-full">
@@ -51,7 +51,6 @@ export function AboutMe() {
               </div>
             </CardContent>
           </Card>
-
           <div className="lg:col-span-2 space-y-6">
             <Card className="bg-gradient-card border-border/50 shadow-card">
               <CardContent className="p-6">

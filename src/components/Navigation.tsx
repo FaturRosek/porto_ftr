@@ -6,7 +6,6 @@ export function Navigation() {
       <div className="container max-w-6xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="h-8 w-8 rounded-full bg-gradient-primary" />
             <span className="text-lg font-semibold">FtrRs</span>
           </div>
           
