@@ -39,7 +39,7 @@ const projects = [
     tags: ["Laravel", "MySQL", "Bootstrap", "REST API"],
     image: "image/tailor.png",
     demoUrl: "https://mm-tailor.up.railway.app/",
-    githubUrl: "https://github.com/username/ai-chat-assistant",
+    githubUrl: "https://github.com/FaturRosek/BNSP",
   },
   {
     title: "Game Edukasi Batik Madura",
