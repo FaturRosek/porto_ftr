@@ -86,9 +86,11 @@ export function Hero() {
                 <Github className="h-5 w-5" />
               </Button>
             </a>
-            <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10">
-              <Linkedin className="h-5 w-5" />
-            </Button>
+            <a href="https://linkedin.com/in/faturrosek" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="rounded-full hover:bg-primary/10">
+                <Linkedin className="h-5 w-5" />
+              </Button>
+            </a>
           </div>
         </div>
       </div>
