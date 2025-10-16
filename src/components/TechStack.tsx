@@ -5,7 +5,7 @@ const techCategories = [
   {
     category: "Front-End",
     icon: Layout,
-    technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Bootstrap", "React", "TypeScript"]
+    technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Bootstrap"]
   },
   {
     category: "Backend",
