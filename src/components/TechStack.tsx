@@ -10,7 +10,7 @@ const techCategories = [
   {
     category: "Backend",
     icon: Server,
-    technologies: ["Laravel", "Node.js", "Express"]
+    technologies: ["Laravel", "Node.js", "Express", "Golang"]
   },
   {
     category: "Database",
