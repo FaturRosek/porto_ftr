@@ -31,9 +31,9 @@ export function Hero() {
                 sequence={[
                   'Full Stack Web Developer', 
                   2000,
-                  'Data Science', 
-                  2000,
                   'AI Engineering', 
+                  2000,
+                  'Informatics Engineering', 
                   2000,
                 ]}
                 wrapper="span"
@@ -41,28 +41,6 @@ export function Hero() {
                 repeat={Infinity} 
               />
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            <TypeAnimation
-              sequence={[
-                'Fresh graduate Universitas Trunojoyo Madura',
-                2000,
-                'College Student in Informatics Engineering',
-                2000,
-                'Bersemangat menciptakan solusi digital inovatif',
-                2000,
-              ]}
-              speed={50}
-              wrapper="span"
-              repeat={Infinity}
-              style={{
-              display: 'inline-block',
-              backgroundImage: 'linear-gradient(to right, #00b4d8, #48cae4, #90e0ef)',
-              WebkitBackgroundClip: 'text',
-              color: 'transparent',
-              fontWeight: 500,
-              }}
-            />
-          </p>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
