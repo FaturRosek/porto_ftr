@@ -71,22 +71,17 @@ export function Experience() {
         </div>
 
         <div className="relative">
-          {/* Vertical timeline line */}
           <div className="absolute left-6 top-0 bottom-0 w-px bg-border hidden sm:block" />
 
           <div className="space-y-10">
             {experiences.map((exp, index) => (
               <div key={index} className="relative flex gap-6 group">
-                {/* Timeline dot */}
                 <div className="relative z-10 hidden sm:flex flex-shrink-0 items-start">
                   <div className="mt-1 w-12 h-12 rounded-full bg-background border-2 border-primary/40 group-hover:border-primary transition-colors duration-300 flex items-center justify-center shadow-sm">
                     <ExperienceIcon type={exp.icon} />
                   </div>
                 </div>
-
-                {/* Card */}
                 <div className="flex-1 bg-gradient-card border border-border/50 rounded-2xl p-6 hover:shadow-glow hover:-translate-y-0.5 transition-all duration-300">
-                  {/* Header */}
                   <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-4">
                     <div>
                       <h3 className="text-lg font-semibold leading-tight">{exp.company}</h3>
@@ -106,8 +101,6 @@ export function Experience() {
                       </span>
                     </div>
                   </div>
-
-                  {/* Bullet points */}
                   <ul className="space-y-2">
                     {exp.points.map((point, i) => (
                       <li key={i} className="flex gap-2 text-sm text-muted-foreground">
