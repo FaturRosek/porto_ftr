@@ -11,6 +11,24 @@ import { url } from "inspector";
 
 const projects = [
   {
+    title: "MSJ Material",
+    description: "Sistem manajemen material berbasis web yang dikembangkan untuk mengelola Master Material, Alternative UoM, dan Bill of Material (BOM), serta mendukung integrasi API SAP untuk pengecekan dan pengelolaan data material.",
+    tags: ["Laravel", "Livewire", "PHP","JavaScript", "MySQL", "OneSignal", "SAP API"],
+    image: "image/image_material.png",
+  },
+  {
+    title: "MSJ Asset",
+    description: "Sistem manajemen aset berbasis web yang dikembangkan untuk mendukung pengelolaan dan pemantauan aset perusahaan, dilengkapi dashboard, fitur monitoring, notifikasi, serta pengembangan dan perbaikan fitur sesuai kebutuhan operasional.",
+    tags: ["Laravel", "Livewire", "PHP","JavaScript", "MySQL", "ECharts"],
+    image: "image/image_asset.png",
+  },
+  {
+    title: "Web Company Profile",
+    description: "Website company profile PT Multi Spunindo Jaya Tbk yang dikembangkan untuk menyajikan informasi perusahaan, profil bisnis, produk, serta informasi terkait perusahaan secara informatif dan mudah diakses melalui platform web",
+    tags: ["Laravel", "PHP", "JavaScript", "MySQL" ],
+    image: "image/cp.png",
+  },
+  {
     title: "E-Stock",
     description: "Sistem layanan kesehatan hewan berbasis web untuk manajemen stok obat, transaksi penyerahan barang, dan pencatatan data oleh petugas puskeswan secara efisien",
     tags: ["Laravel", "MySQL", "Bootstrap", "REST API"],
@@ -48,11 +66,17 @@ const projects = [
     video: "image/game.mp4",
     demoUrl: "https://drive.google.com/file/d/1V0CEJGPduDBMTYghHU5QYAuEhxj7oHG2/view?usp=sharing",
   },
-  
 ];
 
 
 const certificates = [
+    {
+    title: "IT Programmer",
+    issuer: "PT Multi Spunindo Jaya",
+    date: "2026",
+    image: "image/magang.jpg",
+    credential: "MN.035.017559.03.2025",
+  },
   {
     title: "Hak Cipta Aplikasi AR",
     issuer: "Direktoral Jenderal Kekayaan Intelektual",

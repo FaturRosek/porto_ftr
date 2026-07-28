@@ -5,17 +5,17 @@ const techCategories = [
   {
     category: "Front-End",
     icon: Layout,
-    technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "Bootstrap"]
+    technologies: ["React.js", "HTML", "CSS", "JavaScript", "Tailwind CSS", "Bootstrap"]
   },
   {
     category: "Backend",
     icon: Server,
-    technologies: ["Laravel", "Node.js", "Express", "Golang"]
+    technologies: ["Laravel", "Node.js", "Golang"]
   },
   {
     category: "Database",
     icon: Database,
-    technologies: ["MySQL", "PostgreSQL", "Supabase"]
+    technologies: ["MySQL", "PostgreSQL", "MongoDB"]
   },
   {
     category: "Artificial Intelligence & Data Science",
