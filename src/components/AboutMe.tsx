@@ -1,14 +1,17 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button"; // ✅ Tambahkan import Button
-import { Download } from "lucide-react"; // ✅ Tambahkan ikon download
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
 
 const skills = [
   "Problem Solving",
+  "Clean Code",
   "Team Collaboration",
-  "Continous Learning",
   "Attention to Detail",
-  "Time Management"
+  "Fast Learner",
+  "Debugging",
+  "RESTful API",
+  "Version Control",
 ];
 
 export function AboutMe() {
@@ -25,23 +28,18 @@ export function AboutMe() {
           <Card className="lg:col-span-1 overflow-hidden bg-gradient-card border-border/50 shadow-card">
             <CardContent className="p-6">
               <div className="flex flex-col items-center text-center space-y-4">
-                <div className="relative">
-                  <div className="h-32 w-32 rounded-full bg-gradient-primary p-1 animate-glow">
-                    <div className="h-full w-full rounded-full bg-background flex items-center justify-center overflow-hidden">
-                      <img
-                        src="/image/foto.jpg"
-                        alt="Fatur Rosek"
-                        className="h-26 w-26 rounded-full object-cover"
-                      />
-                    </div>
-                  </div>
-                  <div className="absolute -bottom-2 -right-2 h-8 w-8 rounded-full bg-accent flex items-center justify-center shadow-lg">
-                    <span className="text-xl">👋</span>
+                <div className="h-32 w-32 rounded-full bg-gradient-primary p-1 animate-glow">
+                  <div className="h-full w-full rounded-full bg-background flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/image/foto.jpg"
+                      alt="Fatur Rosek"
+                      className="h-full w-full rounded-full object-cover"
+                    />
                   </div>
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold">Fatur Rosek</h3>
-                  <p className="text-muted-foreground">Full Stack Web Developer</p>
+                  <p className="text-muted-foreground text-sm mt-1">Full Stack Web Developer</p>
                 </div>
                 <div className="flex flex-wrap gap-2 justify-center pt-2">
                   {skills.map((skill) => (
@@ -50,15 +48,15 @@ export function AboutMe() {
                     </Badge>
                   ))}
                 </div>
-                <div className="mt-6 flex justify-start pt-4">
-                  <a href="/cv/Fatur Rosek-resume.pdf" download>
+                <div className="w-full pt-2">
+                  <a href="/cv/Fatur_Rosek_CV.pdf" download className="w-full">
                     <Button
-                      className="flex items-center gap-2 px-6 py-2 rounded-full
-                                bg-gradient-to-r from-primary to-purple-600
-                                text-white font-semibold shadow-lg
-                                hover:shadow-[0_0_15px_rgba(147,51,234,0.6)]
-                                hover:scale-105 active:scale-95
-                                transition-all duration-300 ease-in-out"
+                      className="w-full flex items-center justify-center gap-2 px-6 py-2 rounded-full
+                                 bg-gradient-to-r from-primary to-purple-600
+                                 text-white font-semibold shadow-lg
+                                 hover:shadow-[0_0_15px_rgba(147,51,234,0.6)]
+                                 hover:scale-105 active:scale-95
+                                 transition-all duration-300 ease-in-out"
                     >
                       <Download className="h-4 w-4" />
                       Download CV
@@ -68,26 +66,24 @@ export function AboutMe() {
               </div>
             </CardContent>
           </Card>
-
-          <div className="lg:col-span-2 space-y-6">
-            <Card className="bg-gradient-card border-border/50 shadow-card">
+          <div className="lg:col-span-2 flex">
+            <Card className="w-full bg-gradient-card border-border/50 shadow-card">
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-4">My Story</h3>
-                <div className="space-y-4 text-muted-foreground">
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    Saya <span className="font-semibold">Fatur Rosek</span>, lulusan{" "}
-                    <span className="font-semibold">Teknik Informatika Universitas Trunojoyo Madura</span>.
-                    Saya memiliki ketertarikan yang kuat di bidang pengembangan web full stack,
-                    serta minat mendalam terhadap Data Science dan Artificial Intelligence.
+                    Saya <span className="font-semibold text-foreground">Fatur Rosek</span>, lulusan{" "}
+                    <span className="font-semibold text-foreground">
+                      Teknik Informatika Universitas Trunojoyo Madura
+                    </span>
+                    , dengan keahlian komprehensif dalam pengembangan aplikasi web (Full Stack),
+                    pengelolaan data, serta pemeliharaan sistem SAP.
                   </p>
                   <p>
-                    Selama masa studi, saya aktif mengerjakan berbagai proyek berbasis teknologi,
-                    mulai dari sistem e-commerce, aplikasi layanan publik, game edukasi hingga
-                    pengembangan media pembelajaran interaktif berbasis Augmented Reality.
-                  </p>
-                  <p>
-                    Saya senang memecahkan masalah melalui analisis data, logika pemrograman,
-                    dan penerapan teknologi inovatif untuk menciptakan solusi digital yang bermanfaat.
+                    Terbiasa menganalisis kebutuhan sistem, mengembangkan fitur digital, memonitor
+                    operasional, dan memastikan validasi serta akurasi data. Memiliki kemampuan
+                    manajerial yang terbukti melalui pengalaman memimpin tim, ketelitian tinggi, serta
+                    adaptif dalam mencapai target perusahaan baik secara mandiri maupun dalam tim.
                   </p>
                 </div>
               </CardContent>

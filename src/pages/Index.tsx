@@ -2,12 +2,12 @@ import { useState } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { AboutMe } from "@/components/AboutMe";
+import { Experience } from "@/components/Experience";
 import { ContactMe } from "@/components/ContactMe";
 import { ProjectCard } from "@/components/ProjectCard";
 import { CertificateCard } from "@/components/CertificateCard";
 import { TechStack } from "@/components/TechStack";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { url } from "inspector";
 
 const projects = [
   {
@@ -135,6 +135,8 @@ const Index = () => {
 
       <AboutMe />
 
+      <Experience />
+
       <section id="project" className="py-20 px-4">
         <div className="container max-w-6xl mx-auto">
           <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
@@ -191,7 +193,7 @@ const Index = () => {
       <footer className="py-12 px-4 border-t border-border/50 bg-muted/30">
         <div className="container max-w-6xl mx-auto text-center">
           <p className="text-muted-foreground">
-            © 2025 FtrRs Portofolio
+            © 2025 FtrRs Portfolio
           </p>
         </div>
       </footer>

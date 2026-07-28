@@ -4,8 +4,8 @@ import { TypeAnimation } from 'react-type-animation';
 
 export function Hero() {
 
-  const scrollToProjects = () => {
-    const section = document.getElementById("project");
+  const scrollToExperience = () => {
+    const section = document.getElementById("experience");
     section?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -69,7 +69,7 @@ export function Hero() {
             <Button
               size="lg"
               className="rounded-full shadow-glow hover:shadow-glow transition-all"
-              onClick={scrollToProjects}
+              onClick={scrollToExperience}
             >
               View My Work
               <ArrowDown className="ml-2 h-4 w-4" />
