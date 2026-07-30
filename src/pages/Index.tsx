@@ -29,11 +29,10 @@ const projects = [
     image: "image/cp.png",
   },
   {
-    title: "E-Stock",
+    title: "E-Puskeswan",
     description: "Sistem layanan kesehatan hewan berbasis web untuk manajemen stok obat, transaksi penyerahan barang, dan pencatatan data oleh petugas puskeswan secara efisien",
     tags: ["Laravel", "MySQL", "Bootstrap", "REST API"],
-    image: "image/puskeswan.png", 
-    demoUrl: "https://e-puskeswan.up.railway.app/",
+    image: "image/estock.png", 
     githubUrl: "https://github.com/FaturRosek/e-puskeswan",
   },
   {
@@ -48,7 +47,7 @@ const projects = [
     description: "Aplikasi web untuk mempermudah manajemen operasional Kelompok Tani Hutan (KTH), termasuk pengelolaan anggota, pencatatan kegiatan, dan pemantauan hasil produksi secara digital",
     tags: ["Laravel", "MySQL", "Tailwind CSS", "REST API"],
     image: "image/kth.png",
-    demoUrl: "https://kth.up.railway.app/",
+    // demoUrl: "https://kth.up.railway.app/",
     githubUrl: "https://github.com/FaturRosek/KTH",
   },
   {
@@ -56,7 +55,7 @@ const projects = [
     description: "Aplikasi berbasis web untuk pendataan dan manajemen karyawan, mencakup pengelolaan data pribadi, serta laporan kegiatan kerja secara efisien",
     tags: ["Laravel", "MySQL", "Bootstrap", "REST API"],
     image: "image/tailor.png",
-    demoUrl: "https://mm-tailor.up.railway.app/",
+    // demoUrl: "https://mm-tailor.up.railway.app/",
     githubUrl: "https://github.com/FaturRosek/BNSP",
   },
   {
