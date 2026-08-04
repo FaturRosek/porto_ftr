@@ -38,7 +38,6 @@ export function Hero() {
             {/* Status badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full hero-badge">
               <span className="w-2 h-2 rounded-full bg-emerald-400 hero-badge-dot" />
-              <Briefcase className="w-3.5 h-3.5 text-emerald-400" />
               <span className="text-sm font-medium text-emerald-300 tracking-wide">
                 Available to Work · Fresh Graduate 2025
               </span>
