@@ -48,21 +48,6 @@ export function AboutMe() {
                     </Badge>
                   ))}
                 </div>
-                <div className="w-full pt-2">
-                  <a href="/cv/Fatur_Rosek_CV.pdf" download className="w-full">
-                    <Button
-                      className="w-full flex items-center justify-center gap-2 px-6 py-2 rounded-full
-                                 bg-gradient-to-r from-primary to-purple-600
-                                 text-white font-semibold shadow-lg
-                                 hover:shadow-[0_0_15px_rgba(147,51,234,0.6)]
-                                 hover:scale-105 active:scale-95
-                                 transition-all duration-300 ease-in-out"
-                    >
-                      <Download className="h-4 w-4" />
-                      Download CV
-                    </Button>
-                  </a>
-                </div>
               </div>
             </CardContent>
           </Card>
