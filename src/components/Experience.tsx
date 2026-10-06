@@ -12,6 +12,19 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
+    company: "Les Privat Arosbaya",
+    role: "Tutor Bimbel OSN SD – Matematika",
+    type: "",
+    period: "Sept 2026 – Sekarang",
+    location: "Arosbaya, Bangkalan",
+    icon: "work",
+    points: [
+      "Mengajar dan membimbing siswa SD dalam persiapan Olimpiade Sains Nasional (OSN) bidang Matematika.",
+      "Menyusun materi dan latihan soal berdasarkan tingkat kemampuan serta kebutuhan belajar siswa.",
+      "Menjelaskan konsep matematika dan strategi penyelesaian soal secara sistematis dan mudah dipahami.",
+    ],
+  },
+  {
     company: "PT Multi Spunindo Jaya Tbk",
     role: "IT Programmer",
     type: "Internship",

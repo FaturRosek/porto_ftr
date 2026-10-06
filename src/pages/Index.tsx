@@ -36,6 +36,13 @@ const projects = [
     githubUrl: "https://github.com/FaturRosek/e-puskeswan",
   },
   {
+    title: "HelpDesk AI",
+    description: "Sistem customer support & manajemen tiket cerdas berbasis web dengan integrasi AI & RAG dokumen SOP, mesin otomasi SLA, auto-assignment tiket, serta hak akses RBAC",
+    tags: ["React","Tailwind CSS","CodeIgniter 4","PHP","MySQL","REST API","RAG / AI"],
+    image: "image/helpdesk.png", 
+    githubUrl: "https://github.com/FaturRosek/helpdesk-ai",
+  },
+  {
     title: "Aplikasi AR Motif Batik Madura",
     description: "Aplikasi berbasis Android yang memanfaatkan teknologi Augmented Reality untuk menampilkan hasil klasifikasi motif batik Madura secara interaktif",
     tags: ["Unity", "Vuforia", "Artificial Intelligence", "TensorFlow", "Android"],
